@@ -2,6 +2,9 @@ name: Lab 9 Basic Tests
 
 on:
   push:
+    branches:
+      - main
+      - test
 
 jobs:
   lab9-basic-tests:
@@ -32,7 +35,7 @@ jobs:
 
           OUTPUT=$(bash validate-data.sh "pearseT mccarthy" "0831122334")
           echo "Script output was: $OUTPUT"
-          if [ "$OUTPUT" = "FAIL" ]; then
+          if [ "$OUTPUT" = "PASS" ]; then
             echo "Test Passed!"
           else
             echo "Test Failed!"
