@@ -3,7 +3,7 @@
 name="$1"
 mobile="$2"
 
-if [ $# -eq 2 ] && [ ${#name} -le 15 ] && [ ${#mobile} -le 10 ]; then
+if [ $# -eq 2 ] && [ ${#name} -le 20 ] && [ ${#mobile} -le 10 ]; then
     echo "PASS"
 else
     echo "FAIL"
