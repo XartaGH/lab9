@@ -1,0 +1,36 @@
+ 1995  cd devops/
+ 1996  ls
+ 1997  mkdir lab9
+ 1998  cd lab
+ 1999  cd lab9
+ 2000  git init
+ 2001  nano validate-data.sh
+ 2002  chmod +x validate-data.sh
+ 2003  source validate-data.sh "perase mccarthy" "0831122334"
+ 2004  git config --global init.defaultBranch main
+ 2005  git branch -m main
+ 2006  git branch
+ 2007  git status
+ 2008  mkdir .github
+ 2009  cd .git
+ 2010  cd ../.github
+ 2011  mkdir workflows
+ 2012  cd workflows/
+ 2013  nano basictests.yml
+ 2014  cd ../..
+ 2015  git status
+ 2016  git add .
+ 2017  git commit -m "Initial release"
+ 2018  git push
+ 2019  git remote add origin git@github.com:XartaGH/lab9.git
+ 2020  git branch -M main
+ 2021  git push -u origin main
+ 2022  git checkout -b test
+ 2023  nano validate-data.sh
+ 2024  nano ./github/workflows/basictests.yml
+ 2025  nano .github/workflows/basictests.yml
+ 2026  git add .
+ 2027  git commit -m "Test closes #5"
+ 2028  git push
+ 2029  git switch main
+ 2030  history > history.txt
